@@ -1,0 +1,20 @@
+#
+# This file is used by the script warn-renice-kill.sh to monitor
+# heavy processes that are limited to run only a certain amount
+# of CPU minutes on MetaFrame servers. Changes take effect the
+# next time the script is run.
+#
+# Syntax:
+#
+#	<process name>:<cpu minutes>
+#
+# Example:
+#
+#	matlab:45
+#	vsim:10
+#
+# Note: The number of CPU minutes must be >= 10
+#
+<% pslist.each do |i| -%>
+<%= i %>
+<% end -%>
